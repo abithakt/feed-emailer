@@ -2,14 +2,22 @@
 # first run.
 last_accessed: 2018-05-01 00:00:00 # YYYY-MM-DD HH:MM:SS +HHMM
 
+# The address from which emails will be sent
 from: example@example.com
-password: hunter2
+password: password1234
 
+# The address to which emails will be sent
 to: example@example.com
 
+# The address and port of the sender's SMTP server
+# e.g. if your sender uses Gmail, fill in `smtp.gmail.com` for `smtp_server`
+# and `465` for `smtp_port`.
 smtp_server: smtp.example.com
 smtp_port: 465
 
+# The feeds you would like to subscribe to.
+# Enter one on each line as follows.
 feeds:
-    - http://www.lightspeedmagazine.com/rss-2/
-    - https://uncannymagazine.com/feed/
+    - http://example2.com/rss
+    - http://example2.com/feed
+    - http://example3.com/rss
