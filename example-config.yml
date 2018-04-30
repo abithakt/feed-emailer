@@ -7,9 +7,8 @@ password: hunter2
 
 to: example@example.com
 
-email:
-    smtp_server: smtp.example.com
-    smtp_port: 465
+smtp_server: smtp.example.com
+smtp_port: 465
 
 feeds:
     - http://www.lightspeedmagazine.com/rss-2/

@@ -19,8 +19,8 @@ with open(filename, 'r') as ymlfile:
 
 # login to the email server
 sender = smtplib.SMTP_SSL(
-    config['gmail']['smtp_server'],
-    config['gmail']['smtp_port'])
+    config['smtp_server'],
+    config['smtp_port'])
 sender.login(config['from'], config['password'])
 
 
