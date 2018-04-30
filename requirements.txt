@@ -1,0 +1,3 @@
+feedparser==5.1.3
+html2text==2016.1.8
+ruamel.base==1.0.0
