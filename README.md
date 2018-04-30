@@ -6,12 +6,16 @@ designed to be run periodically (e.g. as a cronjob).
 
 PGP support coming soon!
 
-<!--
+
+
 ## Table of contents
-  -
-  -
-  -
--->
+
+  - [Getting started](#getting-started)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [License](#license)
+
+
 
 ## Getting started
 
@@ -47,6 +51,8 @@ or
 py feed-emailer.py
 ```
 
+
+
 ## Usage
 
 Run
@@ -64,16 +70,18 @@ py feed-emailer.py
 For best results, schedule this command to repeat (e.g. as a cronjob).
 
 
+
 ## Contributing
 
 Please submit issues and feature requests [here](https://github.com/abithakt/feed-emailer/issues). Pull requests are welcome. For more information, feel free to email me.
+
 
 
 ## License
 
 file-emailer is licensed under the GPLv3. For more details, see [LICENSE](LICENSE).
 
-> Copyright (C) 2018 Abitha K Thyagarajan
+Copyright (C) 2018 Abitha K Thyagarajan
 
 > This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
