@@ -25,7 +25,7 @@ sender.login(config['from'], config['password'])
 
 
 def create_feed_email(feed, item):
-    """Creates a MIME email for the feed item.
+    """Creates and returns a MIME email for the feed item.
     """
 
     Email = MIMEMultipart('alternative')
