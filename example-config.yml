@@ -1,16 +1,16 @@
-last_accessed: 2018-05-01 00:00:00
-# YYYY-MM-DD HH:MM:SS +HHMM
+# Entries from all dates before `last_accessed` will be emailed to you on the
+# first run.
+last_accessed: 2018-05-01 00:00:00 # YYYY-MM-DD HH:MM:SS +HHMM
 
-from:
-password:
+from: example@example.com
+password: hunter2
 
-to: 
+to: example@example.com
 
-gmail:
-    smtp_server: smtp.gmail.com
+email:
+    smtp_server: smtp.example.com
     smtp_port: 465
 
 feeds:
-    - https://google.com
     - http://www.lightspeedmagazine.com/rss-2/
     - https://uncannymagazine.com/feed/
