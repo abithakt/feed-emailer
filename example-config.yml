@@ -1,6 +1,6 @@
 # Entries from all dates before `last_accessed` will be emailed to you on the
 # first run.
-last_accessed: 2018-05-01 00:00:00 # YYYY-MM-DD HH:MM:SS +HHMM
+last_accessed: 2018-05-01 00:00:00 # YYYY-MM-DD HH:MM:SS
 
 # The address from which emails will be sent
 from: example@example.com
