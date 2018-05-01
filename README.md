@@ -1,4 +1,4 @@
-file-emailer
+feed-emailer
 ============
 
 [![Made with Python3](https://img.shields.io/badge/Made%20with-Python3-1f425f.svg)](https://www.python.org/)
@@ -84,7 +84,7 @@ Please submit issues and feature requests [here](https://github.com/abithakt/fee
 
 ## License
 
-**file-emailer** is licensed under the GPLv3. For more details, see [LICENSE](LICENSE).
+**feed-emailer** is licensed under the GPLv3. For more details, see [LICENSE](LICENSE).
 
 Copyright (C) 2018 Abitha K Thyagarajan
 
