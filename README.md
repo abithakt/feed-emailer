@@ -1,6 +1,11 @@
 file-emailer
 ============
 
+[![Made with Python3](https://img.shields.io/badge/Made%20with-Python3-1f425f.svg)](https://www.python.org/)
+[![License: GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/abithakt/feed-emailer/blob/master/LICENSE)
+[![Maintained? Yes](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/abithakt/feed-emailer/graphs/commit-activity)
+
+
 This is a small program that emails Atom/RSS feed entries to you. It is
 designed to be run periodically (e.g. as a cronjob).
 
@@ -24,13 +29,13 @@ PGP support coming soon!
 2. Clone or [download](https://github.com/abithakt/feed-emailer/archive/master.zip) this repository.
 
 2. Navigate to the folder and install the dependencies:
-```
-pip3 install -r requirements.txt
-```
-or
-```
-py -m pip install -r requirements.txt
-```
+    ```
+    pip3 install -r requirements.txt
+    ```
+    or
+    ```
+    py -m pip install -r requirements.txt
+    ```
 
 3. Rename `example-config.yml` to `config.yml`. Edit it to include your details:
 
@@ -43,13 +48,13 @@ py -m pip install -r requirements.txt
     5. Finally, add the list of feeds you would like to subscribe to under `feeds`.
 
 5. Run `feed-emailer.py`.
-```
-python3 feed-emailer.py
-```
-or
-```
-py feed-emailer.py
-```
+    ```
+    python3 feed-emailer.py
+    ```
+    or
+    ```
+    py feed-emailer.py
+    ```
 
 
 
@@ -73,13 +78,13 @@ For best results, schedule this command to repeat (e.g. as a cronjob).
 
 ## Contributing
 
-Please submit issues and feature requests [here](https://github.com/abithakt/feed-emailer/issues). Pull requests are welcome. For more information, feel free to email me.
+Please submit issues and feature requests [here](https://github.com/abithakt/feed-emailer/issues). Pull requests are welcome. For queries and more information, feel free to email me.
 
 
 
 ## License
 
-file-emailer is licensed under the GPLv3. For more details, see [LICENSE](LICENSE).
+**file-emailer** is licensed under the GPLv3. For more details, see [LICENSE](LICENSE).
 
 Copyright (C) 2018 Abitha K Thyagarajan
 
