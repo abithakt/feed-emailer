@@ -5,15 +5,29 @@ last_accessed: 2018-05-01 00:00:00 # YYYY-MM-DD HH:MM:SS
 # The address from which emails will be sent
 from: example@example.com
 password: password1234
+# Your public key
+sender-key:
+passphrase:
 
 # The address to which emails will be sent
 to: example@example.com
+# recipient's public key
+recipient-key:
 
 # The address and port of the sender's SMTP server
 # e.g. if your sender uses Gmail, fill in `smtp.gmail.com` for `smtp_server`
 # and `465` for `smtp_port`.
 smtp_server: smtp.example.com
 smtp_port: 465
+
+# The gpg binary that you use
+gnupg: /usr/bin/gpg
+# gpg's home directory
+gpg-home:
+# public keyring
+keyring: pubring.gpg
+# secret keyring
+secring: secring.gpg
 
 # The feeds you would like to subscribe to.
 # Enter one on each line as follows.
