@@ -42,13 +42,13 @@ designed to be run periodically (e.g. as a cronjob) and supports PGP.
     2. Put your email address and password under `from` and `password`. This is the address from which emails will be sent.
     3. Under `sender-key` and `passphrase`, put your public key fingerprint and its passphrase.
         * You can determine the fingerprint of a key by running `$ gpg --fingerprint`, which lists all keys with their fingerprints, or `$ gpg --fingerprint [email address]` to view the fingerprint of the key associated with an email address.
-        3. Put the recipient's email address and their public key fingerprint under `recipient` and `recipient-key`.
-    4. Under `smtp_server` and `smtp_port`, put your email provider's SMTP server and port.
-    5. Under `gnupg`, put the path to your gpg binary. You can determine this by running `$ which gpg`.
-    6. Under `gpg-home`, `keyring`, and `secring`, enter your gpg home directory, public keyring, and secret keyring.
+    4. Put the recipient's email address and their public key fingerprint under `recipient` and `recipient-key`.
+    5. Under `smtp_server` and `smtp_port`, put your email provider's SMTP server and port.
+    6. Under `gnupg`, put the path to your gpg binary. You can determine this by running `$ which gpg`.
+    7. Under `gpg-home`, `keyring`, and `secring`, enter your gpg home directory, public keyring, and secret keyring.
         * Run `$ gpg --list-keys`. The output will be something like `/path/to/pubring.gpg`. In this example, `pubring.gpg` is your public keyring, and the rest of the path is your gpg home directory.
         * Similarly, to find the name of your secret keyring, run `$ gpg --list-secret-keys`. The output will be of the form `/path/to/secring.gpg`. Here, `secring.gpg` is the name of your secret keyring.
-    7. Finally, add the list of feeds you would like to subscribe to under `feeds`.
+    8. Finally, add the list of feeds you would like to subscribe to under `feeds`.
 
 5. Run `feed-emailer.py`.
     ```
