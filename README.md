@@ -3,7 +3,6 @@ feed-emailer
 
 [![Made with Python3](https://img.shields.io/badge/Made%20with-Python3-1f425f.svg)](https://www.python.org/)
 [![License: GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/abithakt/feed-emailer/blob/master/LICENSE)
-[![Maintained? Yes](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/abithakt/feed-emailer/graphs/commit-activity)
 
 
 This is a small program that emails Atom/RSS feed entries to you. It is
