@@ -1,3 +1,21 @@
+# feed-emailer: Email RSS feeds to yourself
+# Author: Abitha K Thyagarajan <abitha@pm.me>
+# Copyright (C) 2018 Abitha K Thyagarajan
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
 import feedparser
 import html2text
 import smtplib
@@ -6,15 +24,10 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import datetime
 
-#def open_config_file(filename="config.yml"):
-#    """Opens a YAML config file.
-#       Default filename: "config.yml"
-#    """
 
-filename = "config.yml"
-with open(filename, 'r') as ymlfile:
+# open the config file
+with open("config.yml", 'r') as ymlfile:
     config = yaml.safe_load(ymlfile)
-#    return config
 
 
 # login to the email server
@@ -57,6 +70,7 @@ def create_feed_email(feed, item):
 
     return Email
 
+
 def create_invalid_feed_email(feed):
     """Creates a MIME email saying that `feed` is invalid.
     """
@@ -80,20 +94,18 @@ def create_invalid_feed_email(feed):
     return Email
 
 
-i = 0
 for feed_url in config['feeds']:
     feed = feedparser.parse(feed_url)
     if feed['bozo'] != 1:
         for item in feed['items']:
             if item['published_parsed'] > config['last_accessed']:
                 sender.send_message(create_feed_email(feed, item))
-                i += 1
-                print("sent " + str(i) + " email(s)")
     else:
         sender.send_message(create_invalid_feed_email(feed))
 
+# Update time last accessed
 config['last_accessed'] = datetime.now()
-
 yaml.round_trip_dump(config, open(filename, 'w'))
 
+# Log out from the email server
 sender.quit()
