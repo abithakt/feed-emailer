@@ -6,16 +6,14 @@ feed-emailer
 
 
 This is a small program that emails Atom/RSS feed entries to you. It is
-designed to be run periodically (e.g. as a cronjob).
-
-PGP support coming soon!
-
+designed to be run periodically (e.g. as a cronjob) and supports PGP.
 
 
 ## Table of contents
 
   - [Getting started](#getting-started)
   - [Usage](#usage)
+  - [Planned features](#planned-features)
   - [Contributing](#contributing)
   - [License](#license)
 
@@ -72,6 +70,14 @@ py feed-emailer.py
 ```
 
 For best results, schedule this command to repeat (e.g. as a cronjob).
+
+
+
+## Planned features
+
+  - [x] ~~Add PGP support~~
+  - [ ] Make subject optional
+  - [ ] Make PGP optional
 
 
 
